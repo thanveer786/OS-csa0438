@@ -1,0 +1,20 @@
+1. Include necessary headers (e.g., <stdio.h>).
+
+2. Define a structure to represent a process with the following attributes:
+   - Process ID (PID)
+   - Arrival Time
+   - Burst Time
+
+3. Create an array of processes to represent the set of processes, and initialize their attributes based on the given considerations. For example:
+   - All processes are activated at time 0.
+   - Assume no process waits on I/O devices.
+   - Set the PID, Arrival Time, and Burst Time for each process.
+
+4. Sort the processes in the array based on their arrival times in ascending order.
+
+5. Initialize a variable `current_time` to 0 to keep track of the current time.
+
+6. Initialize a variable `waiting_time` to 0 to calculate the total waiting time for all processes.
+
+7. Loop through the sorted array of processes:
+   -
