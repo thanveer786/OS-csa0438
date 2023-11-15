@@ -1,43 +1,22 @@
 1)Create an array of struct Process to store process information.
-
 2)For each process i from 1 to n:
-
 a.Read the arrival time for the process i.
-
 b.Read the burst time for the process i.
-
 c.Initialize waitingTime[i] and turnaroundTime[i] to 0. Set currentTime to 0.
-
 3)Repeat until all processes are executed:
-
 a.Initialize shortest to -1.
-
 b.For each process j from 0 to n - 1:
-
 i. If processes[j].arrivalTime <= currentTime and processes[j].burstTime > 0:
-
 If shortest is -1 or processes[j].burstTime < processes[shortest].burstTime:
-
 Set shortest to j.
-
 c.If shortest is -1:
-
 No process is available at this time, so increment currentTime by 1 (idle time).
-
 d. Else:
-
 i. Calculate waitingTime[shortest] as (currentTime - processes[shortest].arrivalTime).
-
 ii. Calculate turnaroundTime[shortest] as (waitingTime[shortest] + processes[shortest].burstTime).
-
 iii. Increment currentTime by processes[shortest].burstTime.
-
 iv. Set processes[shortest].burstTime to 0 to mark the process as completed.
-
 4)Calculate the totalWaitingTime and totalTurnaroundTime by summing up the respective values for all processes.
-
 5)Calculate the averageWaitingTime as (totalWaitingTime / n).
-
 6)Calculate the averageTurnaroundTime as (totalTurnaroundTime / n).
-
 7)Display the process-wise waiting time, turnaround time, average waiting time, and average turnaround time.
