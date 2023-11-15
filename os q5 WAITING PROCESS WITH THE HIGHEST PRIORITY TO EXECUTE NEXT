@@ -1,13 +1,7 @@
 1)Initialize a data structure to store processes and their priorities (e.g., an array or a priority queue).
-
 2)Insert processes into the data structure with their respective priorities.
-
 3)Build the data structure into a max-heap (or equivalent priority structure).
-
 4)Repeat the following steps until there are no more processes in the data structure:
-
 a. Extract the process with the highest priority from the data structure.
-
 b. Execute the extracted process.
-
 c. If there are more processes in the data structure, go back to step 4a. 
